@@ -82,19 +82,29 @@
       font-size: 0.95rem;
     }
     .use-case {
+      /* Layout for the example section. Always stack elements vertically
+         and center them so the caption appears beneath the photo on all
+         screen sizes. */
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      align-items: center;
+      gap: 20px;
     }
     .use-case img {
-      max-width: 100%;
+      /* Limit image size for better balance and center it */
+      width: 60%;
+      max-width: 380px;
+      height: auto;
       border-radius: 8px;
     }
     .use-case-content {
+      /* Center the caption and constrain its width */
       background: white;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      text-align: center;
     }
     .cta {
       text-align: center;
@@ -104,12 +114,6 @@
     @media (min-width: 768px) {
       header h1 {
         font-size: 3rem;
-      }
-      .use-case {
-        flex-direction: row;
-      }
-      .use-case img, .use-case-content {
-        flex: 1;
       }
     }
   </style>
