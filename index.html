@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tachyon Devices – Rapid Surgical Prototyping</title>
+  <style>
+    :root {
+      --dark-blue: #062e4f;
+      --mid-blue: #066fae;
+      --teal: #2cc4e0;
+      --accent: #00bcd4;
+      --light: #f6f9fc;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark-blue);
+      background-color: var(--light);
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, var(--dark-blue) 0%, var(--mid-blue) 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    header p {
+      margin: 20px auto 40px;
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+    .btn-primary {
+      background-color: var(--teal);
+      color: var(--dark-blue);
+      padding: 14px 28px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: var(--accent);
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--mid-blue);
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .feature {
+      flex: 1 1 260px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: var(--dark-blue);
+      font-size: 1.3rem;
+    }
+    .feature p {
+      font-size: 0.95rem;
+    }
+    .use-case {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .use-case img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .use-case-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    /* Responsive */
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+      .use-case {
+        flex-direction: row;
+      }
+      .use-case img, .use-case-content {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Get your surgical innovation from concept to prototype in 48&nbsp;hours</h1>
+    <p>We partner with surgeons to turn brilliant ideas into ready‑to‑use devices at record speed. Our commitment deposit consultation sets your project in motion and ensures dedicated time with our expert designers.</p>
+    <a href="#schedule" class="btn-primary">Book Your Consultation</a>
+  </header>
+
+  <section class="section">
+    <h2>Why choose us?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>24&nbsp;hr Design</h3>
+        <p>Our experienced design team turns your concept into a detailed CAD model within 24 hours, so you can see your idea take shape immediately.</p>
+      </div>
+      <div class="feature">
+        <h3>24&nbsp;hr Prototype</h3>
+        <p>With state‑of‑the‑art 3D printing and machining, we produce a tangible prototype the very next day, ready for evaluation and refinement.</p>
+      </div>
+      <div class="feature">
+        <h3>Market‑leading Speed</h3>
+        <p>From initial concept to regulatory prep, our streamlined process accelerates time to market without sacrificing quality or compliance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section use-case">
+    <img src="assets/3d_printer_art.png" alt="Fast prototyping illustration">
+    <div class="use-case-content">
+      <h2>Real‑world example</h2>
+      <p><strong>Case Study: Arthroscopic innovation</strong><br>
+        Dr. Smith, an orthopedic surgeon, envisioned a new arthroscopic instrument to improve knee procedures. Within 24 hours of sharing his concept, we delivered a complete CAD model. The next day, a 3D‑printed prototype arrived at his office, allowing him to test ergonomics and function. After a brief iteration, our team assisted with documentation for regulatory submission. Today, his device is moving toward commercialization—all thanks to our rapid prototyping workflow.</p>
+      <p>This example illustrates how our rapid process turns ideas into reality—fast.</p>
+    </div>
+  </section>
+
+  <section id="schedule" class="section">
+    <h2>Commitment Consultation</h2>
+    <p>Reserve a 15‑minute strategy session with our lead instrument designer. A $40 deposit secures your time and is credited toward your project if you proceed. If you decide not to move forward after the call, the deposit is fully refunded.</p>
+    <p>Your consultation includes:</p>
+    <ul>
+      <li>Review of your idea and goals</li>
+      <li>Discussion of design feasibility and regulatory considerations</li>
+      <li>Transparent next steps and timeline</li>
+    </ul>
+    <div class="cta">
+      <!-- Calendly embed placeholder: replace data-url with your Calendly event link -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/your-username/commitment-consultation" style="min-width:320px;height:630px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </section>
+
+  <footer class="section" style="text-align:center; font-size:0.9rem; color: var(--mid-blue);">
+    <p>&copy; 2025 Tachyon Devices. All rights reserved.</p>
+  </footer>
+</body>
+</html>
